@@ -1,1 +1,1 @@
-# AppliedMachineLearning
+Assignments for the course **AppliedMachineLearning** at `CMI`
