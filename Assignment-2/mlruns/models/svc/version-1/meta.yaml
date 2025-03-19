@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1742375336969
+current_stage: None
+description: null
+last_updated_timestamp: 1742375336969
+name: svc
+run_id: affe3afbb88d4478959b5404ac51289e
+run_link: null
+source: file:///mnt/win/Users/MkReman/Gdrive/GoodNotes/CMI%20Data%20Science/Semester-4/AML/AppliedMachineLearning/Assignment-2/mlruns/108559129931990894/affe3afbb88d4478959b5404ac51289e/artifacts/svc
+status: READY
+status_message: null
+storage_location: file:///mnt/win/Users/MkReman/Gdrive/GoodNotes/CMI%20Data%20Science/Semester-4/AML/AppliedMachineLearning/Assignment-2/mlruns/108559129931990894/affe3afbb88d4478959b5404ac51289e/artifacts/svc
+user_id: null
+version: 1

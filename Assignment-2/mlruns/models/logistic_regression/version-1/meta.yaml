@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1742375316301
+current_stage: None
+description: null
+last_updated_timestamp: 1742375316301
+name: logistic_regression
+run_id: 04f79d76e64c4febb96fc49a1fd29aa3
+run_link: null
+source: file:///mnt/win/Users/MkReman/Gdrive/GoodNotes/CMI%20Data%20Science/Semester-4/AML/AppliedMachineLearning/Assignment-2/mlruns/108559129931990894/04f79d76e64c4febb96fc49a1fd29aa3/artifacts/logistic_regression
+status: READY
+status_message: null
+storage_location: file:///mnt/win/Users/MkReman/Gdrive/GoodNotes/CMI%20Data%20Science/Semester-4/AML/AppliedMachineLearning/Assignment-2/mlruns/108559129931990894/04f79d76e64c4febb96fc49a1fd29aa3/artifacts/logistic_regression
+user_id: null
+version: 1

@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/win/Users/MkReman/Gdrive/GoodNotes/CMI%20Data%20Science/Semester-4/AML/AppliedMachineLearning/Assignment-2/mlruns/108559129931990894/04f79d76e64c4febb96fc49a1fd29aa3/artifacts
+end_time: 1742375316308
+entry_point_name: ''
+experiment_id: '108559129931990894'
+lifecycle_stage: active
+run_id: 04f79d76e64c4febb96fc49a1fd29aa3
+run_name: logistic_regression
+run_uuid: 04f79d76e64c4febb96fc49a1fd29aa3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742375305601
+status: 3
+tags: []
+user_id: mkreman

@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/win/Users/MkReman/Gdrive/GoodNotes/CMI%20Data%20Science/Semester-4/AML/AppliedMachineLearning/Assignment-2/mlruns/108559129931990894/affe3afbb88d4478959b5404ac51289e/artifacts
+end_time: 1742375336992
+entry_point_name: ''
+experiment_id: '108559129931990894'
+lifecycle_stage: active
+run_id: affe3afbb88d4478959b5404ac51289e
+run_name: svc
+run_uuid: affe3afbb88d4478959b5404ac51289e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742375324116
+status: 3
+tags: []
+user_id: mkreman
