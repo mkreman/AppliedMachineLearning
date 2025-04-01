@@ -1,0 +1,17 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.11, pytest-8.3.4, pluggy-1.5.0
+rootdir: /mnt/win/Users/MkReman/Gdrive/GoodNotes/CMI Data Science/Semester-4/AML/AppliedMachineLearning/Assignment-4
+plugins: cov-6.0.0, hydra-core-1.3.2
+collected 1 item
+
+test.py .                                                                [100%]
+
+---------- coverage: platform linux, python 3.11.11-final-0 ----------
+Name      Stmts   Miss  Cover   Missing
+---------------------------------------
+test.py      26      0   100%
+---------------------------------------
+TOTAL        26      0   100%
+
+
+============================== 1 passed in 12.23s ==============================
