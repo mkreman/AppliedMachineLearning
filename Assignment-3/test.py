@@ -3,6 +3,7 @@ import os
 import time
 import signal
 import json
+import sys
 import joblib
 from score import score
 import requests
@@ -54,43 +55,30 @@ def test_obvious_ham():
 
 def test_flask():
     # Start Flask server
-    process = subprocess.Popen(["python", "./app.py"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    time.sleep(5)
+    process = subprocess.Popen([sys.executable, "./app.py"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    time.sleep(10)
 
-    response = requests.get("http://127.0.0.0:5000/")
-    assert response.status_code == 200
-
-    # Send POST request to server with JSON header
-    output = requests.post(
-        "http://127.0.0.0:5000/predict",
-        data={"text": "Test is a message", "threshold": "0.5"},
-        headers={"Accept": "application/json"}
-    )
-    
-    # Parse the output and check if it has the expected keys and types
     try:
+        response = requests.get("http://127.0.0.1:5000/")
+        assert response.status_code == 200
+
+        # Send POST request to server with JSON header
+        data = {"text": "Test is a message", "threshold": 0.5}
+        output = requests.post(
+            "http://127.0.0.1:5000/score",
+            data=json.dumps(data),
+            headers={"Content-Type": "application/json"}
+        )
+        assert output.status_code == 200
+
+        # Parse the output and check if it has the expected keys and types
         response_json = output.json()
         assert "prediction" in response_json
         assert "propensity" in response_json
         assert isinstance(response_json["prediction"], bool)
         assert isinstance(response_json["propensity"], float)
-    except json.JSONDecodeError:
-        print("Failed to parse JSON response")
-        assert False
-
-    # Stop Flask server
-    os.kill(process.pid, signal.SIGTERM)
-    process.wait()
-
-
-if __name__ == "__main__":
-    # test_smoke()
-    # test_output_format()
-    # test_prediction_values()
-    # test_propensity_range()
-    # test_threshold_zero()
-    # test_threshold_one()
-    # test_obvious_spam()
-    # test_obvious_ham()
-    # test_flask()
-    pass
+    
+    finally:
+        # Stop Flask server
+        os.kill(process.pid, signal.SIGTERM)
+        process.wait()
