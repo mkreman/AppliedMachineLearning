@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Check if the current branch is 'main'
+branch_name=$(git rev-parse --abbrev-ref HEAD)
+if [ "$branch_name" != "main" ]; then
+    exit 0
+fi
+
+# Run the test script
+cd Assignment-4
+python3 test.py
+
+test_status=$?
+
+# If the test fails, prevent the commit
+if [ $test_status -ne 0 ]; then
+    echo "Tests failed. Commit aborted."
+    exit 1
+fi
+
+exit 0
